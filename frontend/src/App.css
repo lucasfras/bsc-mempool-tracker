@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+}
+
+.table {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.cell {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
