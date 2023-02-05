@@ -26,7 +26,7 @@ function App() {
     Object.entries(datapending).forEach(([chave, valor]) => {
 
       for(const chaves in valor){
-        queuedArray.push(valor[chaves])
+        pendingArray.push(valor[chaves])
       }
 
     })
@@ -39,7 +39,6 @@ function App() {
   }
 
   useEffect(()=> {
-   // fetch('http://localhost:3000/').then((result) => console.log(result))
    axios.get('http://localhost:3000/', {
     headers: {
       'Content-Type': 'application/json',
@@ -56,7 +55,7 @@ function App() {
   }, [])
   
   return (
-    <div class='maindiv'>
+    <div className='maindiv'>
 
       <h1>Mempool tracker</h1>
 
